@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_test1"
+        android:textColor="#CC3300"
+        android:textSize="18sp"
+        />
+ 
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/tv_test1"
+        android:textColor="#CC3300"
+        android:textSize="18sp"
+    />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="帅选"
+        android:drawableRight="@drawable/icon_application"
+        android:drawablePadding="5dp"
+        android:textColor="#CC3300"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/tv_test1"
+        android:textColor="#CC3300"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/tv_test1"
+        android:textColor="#CC3300"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#CC3300"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+
+        android:text="曲终，云游四海的龟冈画师摘下指尖的芦管时，刚才一直用手背将眼角的泪水抹到膝头的五岁的苗，终于按捺不住，抽泣着冲到祖母身边，低头恳求道：“祖母，快快赏赐师父！”"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+
+
+</LinearLayout>
