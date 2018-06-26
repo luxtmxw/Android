@@ -12,5 +12,46 @@
         android:text="TextView"
         />
 
+    <Button
+        android:id="@+id/btn_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        />
+
+    <Button
+        android:id="@+id/btn_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Text"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_radioBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RadionButton"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_checkBoxBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_imageViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ImageView"
+        android:textAllCaps="false"
+        />
+
+
+
 
 </LinearLayout>
