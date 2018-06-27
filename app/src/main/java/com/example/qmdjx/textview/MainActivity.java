@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.qmdjx.textview.gridview.GridViewActivity;
 import com.example.qmdjx.textview.listview.ListViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnCheckBox;
     private Button mBtnImageView;
     private Button mBtnListView;
+    private Button mBtnGradView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnCheckBox = findViewById(R.id.btn_checkBoxBtn);
         mBtnImageView = findViewById(R.id.btn_imageViewBtn);
         mBtnListView = findViewById(R.id.btn_listViewBtn);
+        mBtnGradView = findViewById(R.id.btn_gridViewBtn);
         setListener();
     }
 
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnCheckBox.setOnClickListener(onClick);
         mBtnImageView.setOnClickListener(onClick);
         mBtnListView.setOnClickListener(onClick);
+        mBtnGradView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -75,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_listViewBtn:
                     intent = new Intent(MainActivity.this,ListViewActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_gridViewBtn:
+                    intent = new Intent(MainActivity.this,GridViewActivity.class);
                     startActivity(intent);
                     break;
 
