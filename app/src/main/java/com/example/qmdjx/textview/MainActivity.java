@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 import com.example.qmdjx.textview.gridview.GridViewActivity;
 import com.example.qmdjx.textview.listview.ListViewActivity;
+import com.example.qmdjx.textview.recycleview.RecycleViewActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button mBtnTextView;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnImageView;
     private Button mBtnListView;
     private Button mBtnGradView;
+    private Button mBtnRecycleView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView = findViewById(R.id.btn_imageViewBtn);
         mBtnListView = findViewById(R.id.btn_listViewBtn);
         mBtnGradView = findViewById(R.id.btn_gridViewBtn);
+        mBtnRecycleView = findViewById(R.id.btn_recycleViewBtn);
         setListener();
     }
 
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView.setOnClickListener(onClick);
         mBtnListView.setOnClickListener(onClick);
         mBtnGradView.setOnClickListener(onClick);
+        mBtnRecycleView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -83,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_gridViewBtn:
                     intent = new Intent(MainActivity.this,GridViewActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_recycleViewBtn:
+                    intent = new Intent(MainActivity.this,RecycleViewActivity.class);
                     startActivity(intent);
                     break;
 

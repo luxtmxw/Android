@@ -24,8 +24,13 @@
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".ImageViewActivity" />
-        <activity android:name=".listview.ListViewActivity"/>
-        <activity android:name=".gridview.GridViewActivity"/>
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".gridview.GridViewActivity" />
+        <activity android:name=".recycleview.RecycleViewActivity" />
+        <activity android:name=".recycleview.LinearRecycleActivity" />
+        <activity android:name=".recycleview.FlowRecycleActivity" />
+        <activity android:name=".recycleview.HorRecycleActivity" />
+        <activity android:name=".recycleview.GridRecycleActivity"></activity>
     </application>
 
 </manifest>
