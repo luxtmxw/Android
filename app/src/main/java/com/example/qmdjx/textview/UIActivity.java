@@ -23,6 +23,8 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnWebView;
     private Button mBtnToast;
     private Button mBtnDialogBtn;
+    private Button mBtnCustomDialogBtn;
+    private Button mBtnPopupWindow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,8 @@ public class UIActivity extends AppCompatActivity {
         mBtnWebView = findViewById(R.id.btn_webViewBtn);
         mBtnToast = findViewById(R.id.btn_toastBtn);
         mBtnDialogBtn = findViewById(R.id.btn_dialogBtn);
+        mBtnCustomDialogBtn = findViewById(R.id.btn_customDialogBtn);
+        mBtnPopupWindow = findViewById(R.id.btn_popupWindow);
 
         setListener();
     }
@@ -59,6 +63,8 @@ public class UIActivity extends AppCompatActivity {
         mBtnWebView.setOnClickListener(onClick);
         mBtnToast.setOnClickListener(onClick);
         mBtnDialogBtn.setOnClickListener(onClick);
+        mBtnCustomDialogBtn.setOnClickListener(onClick);
+        mBtnPopupWindow.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -114,6 +120,15 @@ public class UIActivity extends AppCompatActivity {
                     intent = new Intent(UIActivity.this,DialogActivity.class);
                     startActivity(intent);
                     break;
+                case R.id.btn_customDialogBtn:
+                    intent = new Intent(UIActivity.this,CustomDialogActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_popupWindow:
+                    intent = new Intent(UIActivity.this,PopupWindowActivity.class);
+                    startActivity(intent);
+                    break;
+
             }
         }
     }
