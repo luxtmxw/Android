@@ -37,6 +37,17 @@
         </activity>
         <activity android:name=".CustomDialogActivity" />
         <activity android:name=".PopupWindowActivity"></activity>
+        <activity android:name=".LifeCycleActivity"></activity>
+        <activity android:name=".jump.AActivity"
+            android:label="AActivity"></activity>
+        <activity android:name=".jump.BActivity"
+            android:label="BActivity">
+            <intent-filter>
+                <action android:name="com.mxw.test.BActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
